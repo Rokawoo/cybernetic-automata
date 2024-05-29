@@ -1,0 +1,300 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/CircleArena.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.25658242527328273 0.491031008246897 0.8324986534409027 1.0930013583794924
+  position -0.8489744679687456 -1.276321965704362 1.0545391826273975
+}
+TexturedBackground {
+  luminosity 0.3
+}
+RectangleArena {
+  translation 0 0 -1
+  rotation 1 0 0 1.01503e-06
+  floorSize 0 0
+}
+CircleArena {
+  radius 2.7
+}
+DEF mouse Robot {
+  translation 0.3 0 0.0400008
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  children [
+    DEF split Pose {
+      translation 0 0.01 0.15
+      children [
+        Shape {
+          appearance PBRAppearance {
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.001 0.07 0.12
+          }
+        }
+      ]
+    }
+    DEF left_ear Pose {
+      translation -0.04 0.03 0.0974
+      rotation 0 1 0 2.85387e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            roughness 1
+            metalness 0
+          }
+          geometry DEF left_ear Cylinder {
+            height 0.004
+            radius 0.023
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.992157 0.745098 1
+            roughness 1
+            metalness 0
+          }
+          geometry DEF left_ear Cylinder {
+            height 0.005
+            radius 0.02
+          }
+        }
+      ]
+    }
+    DEF right_ear Pose {
+      translation 0.04 0.03 0.0974
+      rotation 0 1 0 2.85387e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            roughness 1
+            metalness 0
+          }
+          geometry DEF left_ear Cylinder {
+            height 0.004
+            radius 0.023
+          }
+        }
+        DEF right_ear Shape {
+          appearance PBRAppearance {
+            baseColor 0.992157 0.745098 1
+            roughness 1
+            metalness 0
+          }
+          geometry DEF left_ear Cylinder {
+            height 0.005
+            radius 0.02
+          }
+        }
+      ]
+    }
+    DEF nose Pose {
+      translation 0 -0.00999998 0.1
+      rotation 1 0 0 -1.5707953071795862
+      children [
+        DEF nose Shape {
+          appearance PBRAppearance {
+            baseColor 0.992157 0.745098 1
+            roughness 1
+            metalness 0
+          }
+          geometry Cone {
+            bottomRadius 0.005
+            height 0.01
+          }
+        }
+      ]
+    }
+    DEF tail Pose {
+      translation 0 0.09 -0.0949
+      children [
+        DEF tail Shape {
+          appearance PBRAppearance {
+            baseColor 0.992157 0.745098 1
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.15 0.01
+          }
+        }
+      ]
+    }
+    DEF ls_left LightSensor {
+      translation 0.03 0 0.1
+      rotation 0 -1 0 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ls_left"
+    }
+    DEF ls_right LightSensor {
+      translation -0.03 0 0.1
+      rotation 0 -1 0 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ls_right"
+    }
+    DEF BODY Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.05 0.2
+      }
+    }
+    DEF WHEEL1 HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0.06 0 0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel1"
+        }
+      ]
+      endPoint DEF wheel_end1 Solid {
+        translation 0.06 0 0.05
+        rotation -0.7058262129410263 -0.060125321823590115 -0.7058288055902356 3.261698266413056
+        children [
+          DEF WHEEL Pose {
+            rotation 0 0 1 1.5708
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0.992157 0.745098 1
+                  roughness 1
+                  metalness 0
+                }
+                geometry Cylinder {
+                  height 0.02
+                  radius 0.04
+                  subdivision 24
+                }
+              }
+            ]
+          }
+        ]
+        boundingObject USE WHEEL
+        physics Physics {
+        }
+      }
+    }
+    DEF WHEEL2 HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor -0.06 0 0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel2"
+        }
+      ]
+      endPoint DEF wheel_end2 Solid {
+        translation -0.06 0 0.05
+        rotation -0.08732926495323153 0.9923442663403583 -0.08732958573212238 1.5784851134628164
+        children [
+          USE WHEEL
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL
+        physics Physics {
+        }
+      }
+    }
+    DEF WHEEL3 HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0.06 0 -0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel3"
+        }
+      ]
+      endPoint DEF wheel_end3 Solid {
+        translation 0.06 0 -0.05
+        rotation -0.7058185739776133 -0.06030440621853396 -0.7058211665987629 3.262055139933223
+        children [
+          USE WHEEL
+        ]
+        name "solid(2)"
+        boundingObject USE WHEEL
+        physics Physics {
+        }
+      }
+    }
+    DEF WHEEL4 HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor -0.06 0 -0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel4"
+        }
+      ]
+      endPoint DEF wheel_end4 Solid {
+        translation -0.06 0 -0.05
+        rotation -0.08757979483816096 0.9923001071870438 -0.08758011653730112 1.5785296129621327
+        children [
+          USE WHEEL
+        ]
+        name "solid(3)"
+        boundingObject USE WHEEL
+        physics Physics {
+        }
+      }
+    }
+  ]
+  boundingObject USE BODY
+  physics Physics {
+    density -1
+    mass 1
+  }
+  controller "ca_vehicle_controller"
+  supervisor TRUE
+}
+PointLight {
+  attenuation 1 1 1
+  intensity 1.5
+  location 0 0 0.04
+}
+Pose {
+  translation 0 0 0.03
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+        roughness 1
+        metalness 0
+        emissiveColor 1 1 0
+        emissiveIntensity 7
+      }
+      geometry Sphere {
+        radius 0.02
+      }
+    }
+  ]
+}
