@@ -26,11 +26,14 @@ References:
 
 **Project Media:**
 
-![STAR_Poster_2023](https://github.com/Rokawoo/cybernetic-automata/assets/129356996/f60cef49-f70f-46b8-8cf0-bb891948726f)
-![CA Curve](https://github.com/Rokawoo/cybernetic-automata/assets/129356996/2a9fcdbd-887b-4f88-8a99-0c71b6577dec)
-![Average_Curve_Fitted_2D_vs_1D_V2](https://github.com/Rokawoo/cybernetic-automata/assets/129356996/409341d7-ce51-40f2-b37f-7f93dc80e659)
-![Average_Curve_Raw_2D_vs_1D](https://github.com/Rokawoo/cybernetic-automata/assets/129356996/a9f222dc-44bf-434e-b684-d2b0993bd07f)
-![ca_vehicle_world](https://github.com/Rokawoo/cybernetic-automata/assets/129356996/83a167f6-0c51-4209-bed3-da95604fc245)
+<div align="center">
+  <img src="https://github.com/Rokawoo/cybernetic-automata/assets/129356996/f60cef49-f70f-46b8-8cf0-bb891948726f" alt="STAR_Poster_2023"/>
+  <img src="https://github.com/Rokawoo/cybernetic-automata/assets/129356996/2a9fcdbd-887b-4f88-8a99-0c71b6577dec" alt="CA Curve"/>
+  <img src="https://github.com/Rokawoo/cybernetic-automata/assets/129356996/409341d7-ce51-40f2-b37f-7f93dc80e659" alt="Average_Curve_Fitted_2D_vs_1D_V2"/>
+  <img src="https://github.com/Rokawoo/cybernetic-automata/assets/129356996/a9f222dc-44bf-434e-b684-d2b0993bd07f" alt="Average_Curve_Raw_2D_vs_1D"/>
+  <img src="https://github.com/Rokawoo/cybernetic-automata/assets/129356996/83a167f6-0c51-4209-bed3-da95604fc245" alt="CA_Vehicle_World"/>
+</div>
+
 
 
 ## 🛠 Libraries and Tools Used
