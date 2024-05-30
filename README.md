@@ -7,24 +7,24 @@
 > [!CAUTION]
 > ⭐ It's alive! Well.. for the most part. Someone should put this miserable thing down.
 
-**My Contribution:**
+**My Contribution**
 
 Developed a novel approach to enhance intelligent systems' emulation of natural learning processes by upgrading Dr. Brian L. Stuart's Cybernetic Automata model to a more lifelike environment and integrating it into a Braitenberg vehicle-inspired robotic mouse. Analyzed the model's fidelity, showcasing its potential for lifelike learning and replicating natural intelligence in diverse contexts.
 
-**Abstract:**
+**Abstract**
 
 The pursuit of artificial intelligence aims to develop systems capable of advanced learning, resembling natural intelligence. My research centers on Dr. Brian L. Stuart's Cybernetic Automata, a computational model that emulates low-level learning abilities, which progressively build into complex behaviors. This model delves into the intersection of psychology and computer science by replicating the renowned Skinner Box experiment within a one-dimensional world defined by two points. The cybernetic automata model exhibits traits encompassing instrumental learning, reinforced learning, and operant conditioning. My primary objective was to establish the model's faithfulness within a more lifelike Skinner box, granting it complete freedom in a two-dimensional world and further accentuating its plausibility to imitate natural intelligence. By exploring the capabilities of the model and simulating nature-mimicking learning processes, this research provides invaluable insights into the potential of intelligent systems for replicating both rudimentary and sophisticated learning. The unraveling of adaptive and learning mechanisms in intelligent systems holds profound implications across diverse disciplines, industries, and societal contexts.
 
-References: 
+References
 - Stuart, Brian L. "An alternative computational model for artificial intelligence." Diss. Purdue University, 1992.
 - Skinner, Burrhus Frederic. "Are theories of learning necessary?" Psychological review 57.4 (1950): 193.
 - Shaikh, D. & Rañó, I. "Braitenberg vehicles for research in neuroscience." Front. Bioeng. Biotechnol. 8 (2020): 565963.
 
-**Demo Video:**
+**Demo**
 
 [Demo](https://github.com/Rokawoo/cybernetic-automata/assets/129356996/40340196-b4a0-4fb0-a60e-cba855d21602)
 
-**Project Media:**
+**Project Media**
 
 <div align="center">
   <img src="https://github.com/Rokawoo/cybernetic-automata/assets/129356996/f60cef49-f70f-46b8-8cf0-bb891948726f" alt="STAR_Poster_2023"/>
